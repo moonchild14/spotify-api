@@ -1,0 +1,42 @@
+{
+  "nick": "nick",
+  "oauth": "oauth:",
+  "client_id": "CLIENT_ID",
+  "prefix": "!",
+  "default_balance": 200,
+  "loyalty_interval": 60,
+  "loyalty_amount": 2,
+  "owner": "BOT_OWNER_NAME",
+  "channels": [
+    "channel"
+  ],
+  "mods_folder": "mods",
+  "commands_folder": "commands",
+  "command_server_enabled": true,
+  "command_server_port": 1337,
+  "command_server_host": "0.0.0.0",
+  "command_server_password": "",
+  "disable_whispers": true,
+  "use_command_whitelist": false,
+  "send_message_on_command_whitelist_deny": true,
+  "send_message_on_disabled_command_use": true,
+  "command_whitelist": [
+    "help",
+    "commands",
+    "reloadcmdwhitelist",
+    "reloadmod",
+    "reloadperms",
+    "disablemod",
+    "enablemod",
+    "disablecmdglobal",
+    "disablecmd",
+    "enablecmdglobal",
+    "enablecmd",
+    "addcmd",
+    "delcmd",
+    "updatecmd",
+    "cmd"
+  ],
+  "enable_cooldown_bypass_permissions": true,
+  "disable_command_permission_denied_message": false
+}

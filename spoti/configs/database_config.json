@@ -1,0 +1,11 @@
+{
+  "connection": "{database_format}+{driver}://{username}:{password}@{address}:{port}/{database}",
+  "database_format": "mysql",
+  "driver": "mysqlconnector",
+  "enabled": false,
+  "address": "localhost",
+  "port": "3306",
+  "username": "root",
+  "password": "password",
+  "database": "twitchbot"
+}
