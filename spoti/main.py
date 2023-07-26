@@ -4,7 +4,7 @@ from multiprocessing import Process
 
 SPOTIFY_ACCESS_TOKEN = '' # Spotify token
 
-SPOTIFY_GET_CURRENT_TRACK_URL='https://api.spotify.com/v1/me/player/currently-playing' #link to view playing
+SPOTIFY_GET_CURRENT_TRACK_URL='https://api.spotify.com/v1/me/player/currently-playing' # Link to request
 
 
 twich_token = '' # Token - your twich chat-bot token
@@ -24,9 +24,11 @@ def get_current_track(access_token):
 class Bot(commands.Bot):
 
     def __init__(self):
-        super().__init__(token=twich_token, prefix='!', initial_channels=[twich_channel]) # Token - your twich chat-bot token
-                                                                                      # Prefix - The prefix with which the bot will define commands
-                                                                                      # initial_channels - The name of the channel on which the bot will work
+        super().__init__(token=twich_token, prefix='!', initial_channels=[twich_channel])
+        # Token - your twich chat-bot token
+        # Prefix - The prefix with which the bot will define commands
+        # initial_channels - The name of the channel on which the bot will work     
+    
     async def event_ready(self):
         print(f"Connected to {twich_channel}") # If the connection to twich was successful
 
