@@ -31,4 +31,4 @@ twich_channel = '' # The name of the channel on which the bot will work
 
 ## License
 
-This project is [MIT](./LICENSE.md) licensed.
+This project is [MIT](./LICENSE) licensed.
