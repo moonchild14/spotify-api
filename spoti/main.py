@@ -14,7 +14,8 @@ def main():
     current_track_info = get_current_track(SPOTIFY_ACCESS_TOKEN)
 
 def get_current_track(access_token):
-    response = requests.get(SPOTIFY_GET_CURRENT_TRACK_URL, headers={"Authorization": f"Bearer {access_token}"}) # Connect to spotify with access token and get array with data
+    response = requests.get(SPOTIFY_GET_CURRENT_TRACK_URL, headers={"Authorization": f"Bearer {access_token}"})
+    # Connect to spotify with access token and get array with data
     global resp_json
     resp_json = response.json() # Make variable and return it
     return resp_json
